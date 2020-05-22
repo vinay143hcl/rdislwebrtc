@@ -138,7 +138,11 @@ connection.session = {
     audio: true,
     video: true
 };
-
+connection.bandwidth = {
+    audio: 30,  // 50 kbps
+    video: 128, // 256 kbps
+    screen: 300 // 300 kbps
+};
 connection.sdpConstraints.mandatory = {
     OfferToReceiveAudio: true,
     OfferToReceiveVideo: true
